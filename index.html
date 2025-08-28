@@ -25,14 +25,14 @@
 
     <section>
       <div
-        class="header-section-parent-div w-[90%] bg-white flex justify-between my-5 mx-auto  md:flex-row flex-col items-center p-2"
+        class="header-section-parent-div w-[90%] bg-white flex justify-between my-5 mx-auto md:flex-row flex-col items-center p-2"
       >
         <div class="header-section-left-side-div flex items-center ml-6">
           <div class="header-section-logo-div">
             <img
               src="./Images/logo.png"
               alt="logo"
-              class="w-[50px] h-[50px] mb-3 md:mb-0 "
+              class="w-[50px] h-[50px] mb-3 md:mb-0"
             />
           </div>
           <div>
@@ -47,7 +47,7 @@
             class="header-section-hart-div w-[80px] p-1 rounded-2xl text-center text-sm bg-[#41ff6b1a] flex justify-center h-[6vh]"
           >
             <p>
-              <span class="font-bold">0</span>
+              <span id="love-number" class="font-bold">0</span>
             </p>
             <img
               src="Images/heart.png"
@@ -59,7 +59,7 @@
             class="bg-[#41ff6b1a] w-[80px] p-1 rounded-2xl text-center text-sm flex justify-center h-[6vh]"
           >
             <p>
-              <span class="font-bold">100</span>
+              <span id="coin-value" class="font-bold">100</span>
             </p>
             <img
               src="Images/coin.png"
@@ -71,7 +71,7 @@
             class="bg-[#00A63E] w-[80px] p-1 rounded-2xl text-white text-center text-sm h-[6vh]"
           >
             <p>
-              <span>0</span>
+              <span id="copy-number">0</span>
               Copy
             </p>
           </div>
@@ -81,7 +81,7 @@
     <!-- .........#006747...............#013223.......Banner Section........................... -->
     <section>
       <div
-        class="bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] text-center p-5 "
+        class="bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] text-center p-5"
       >
         <img
           src="./Images/logo-dark.png"
@@ -104,7 +104,9 @@
           class="main-section-left-side-div grid md:grid-cols-3 md:grid-row-3 mx-auto gap-3 bg-slate-100 w-[80%]"
         >
           <!-- ....................card 1................ -->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
@@ -116,28 +118,34 @@
                 />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold text-sm">National Emergency Number</h1>
             <p class="text-slate-400">Nation Emergency</p>
-            <p class="font-semibold">999</p>
+            <p id="card-one-number" class="font-semibold">999</p>
             <div class="bg-slate-200 w-[28px] rounded-lg text-center">
               <p class="text-slate-400 text-sm my-1">All</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-one-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200  hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+              id="card-one-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
           <!-- ......................card 2................... -->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
@@ -145,7 +153,9 @@
                 <img src="Images/police.png" alt="" class="w-[20px] h-[20px]" />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold">Police Helpline Number</h1>
@@ -155,18 +165,22 @@
               <p class="text-slate-400 text-sm my-1">Police</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-Two-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+              id="card-two-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
           <!-- .............................card-3........................ .-->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
@@ -177,8 +191,10 @@
                   class="w-[20px] h-[20px]"
                 />
               </div>
-              <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+              <div class="">
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold">Fire Service Number</h1>
@@ -188,12 +204,14 @@
               <p class="text-slate-400 text-sm my-1">Fire</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-three-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200  hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+              id="card-three-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
@@ -213,28 +231,34 @@
                 />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold">Ambulance Service</h1>
             <p class="text-slate-400">Ambulance</p>
-            <p class="font-semibold">1994-999999</p>
+            <p id="card-four-number" class="font-semibold">1994-999999</p>
             <div class="bg-slate-200 w-[85px] rounded-lg text-center">
               <p class="text-slate-400 text-sm my-1">Ambulance</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-four-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+              id="card-four-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
           <!-- ........................card 5................................... -->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
@@ -246,28 +270,34 @@
                 />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold">Woman & Child Helpline</h1>
             <p class="text-slate-400">Woman & Child Helpline</p>
-            <p class="font-semibold">109</p>
+            <p id="card-five-number" class="font-semibold">109</p>
             <div class="bg-slate-200 w-[40px] rounded-lg text-center">
               <p class="text-slate-400 text-sm my-1">Help</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-five-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+              id="card-five-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
           <!-- ..............................card 6................................. -->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
@@ -279,90 +309,108 @@
                 />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold">Anti-Corruption Helpline</h1>
             <p class="text-slate-400">Anti-Corruption</p>
-            <p class="font-semibold">106</p>
+            <p id="card-six-number" class="font-semibold">106</p>
             <div class="bg-slate-200 w-[40px] rounded-lg text-center">
               <p class="text-slate-400 text-sm my-1">Govt</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-Six-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
+              id="card-six-call-button"
               class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
           <!-- .......................card 7.......................-->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
-            <div
-              class="main-section-card-1-div w-full flex justify-between items-center"
-            >
-              <div class="main-section-card-1-topportion-div">
-                <img src="Images/emergency.png" alt="" class="w-[20px] h-[20px]" />
-              </div>
-              <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
-              </div>
-            </div>
-            <h1 class="font-bold">Electricity Helpline</h1>
-            <p class="text-slate-400">Electricity Outage</p>
-            <p class="font-semibold">16216</p>
-            <div class="bg-slate-200 w-[80px] rounded-lg text-center">
-              <p class="text-slate-400 text-sm my-1">Electricity</p>
-            </div>
-            <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
-            >
-              <i class="fa-solid fa-copy"></i>Copy
-            </button>
-            <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
-            >
-              <i class="fa-solid fa-phone"></i>Call
-            </button>
-          </div>
-          <!-- ........................card 8................................. -->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
               <div class="main-section-card-1-topportion-div">
                 <img
-                  src="Images/brac.png"
+                  src="Images/emergency.png"
                   alt=""
                   class="w-[20px] h-[20px]"
                 />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
-            <h1 class="font-bold">Brac Helpline</h1>
-            <p class="text-slate-400">Brac</p>
-            <p class="font-semibold">16445</p>
-            <div class="bg-slate-200 w-[40px] rounded-lg text-center">
-              <p class="text-slate-400 text-sm my-1">NGO</p>
+            <h1 class="font-bold">Electricity Helpline</h1>
+            <p class="text-slate-400">Electricity Outage</p>
+            <p id="card-seven-number" class="font-semibold">16216</p>
+            <div class="bg-slate-200 w-[80px] rounded-lg text-center">
+              <p class="text-slate-400 text-sm my-1">Electricity</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-seven-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+              id="card-seven-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
+            >
+              <i class="fa-solid fa-phone"></i>Call
+            </button>
+          </div>
+          <!-- ........................card 8................................. -->
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
+            <div
+              class="main-section-card-1-div w-full flex justify-between items-center"
+            >
+              <div class="main-section-card-1-topportion-div">
+                <img src="Images/brac.png" alt="" class="w-[20px] h-[20px]" />
+              </div>
+              <div>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
+              </div>
+            </div>
+            <h1 class="font-bold">Brac Helpline</h1>
+            <p class="text-slate-400">Brac</p>
+            <p id="card-eight-number" class="font-semibold">16445</p>
+            <div class="bg-slate-200 w-[40px] rounded-lg text-center">
+              <p class="text-slate-400 text-sm my-1">NGO</p>
+            </div>
+            <button
+            id="card-eight-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
+            >
+              <i class="fa-solid fa-copy"></i>Copy
+            </button>
+            <button
+              id="card-Eight-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
           <!-- ..............................card 9........................... -->
-          <div class="main-section-left-side-card-div bg-white rounded-sm p-4">
+          <div
+            class="main-section-left-side-card-div bg-white rounded-sm p-4 shadow-xl"
+          >
             <div
               class="main-section-card-1-div w-full flex justify-between items-center"
             >
@@ -374,7 +422,9 @@
                 />
               </div>
               <div>
-                <i class="fa-solid fa-heart text-slate-400"></i>
+                <i
+                  class="love-sign fa-solid fa-heart text-slate-400 hover:text-red-600"
+                ></i>
               </div>
             </div>
             <h1 class="font-bold text-sm">Bangladesh Railway Helpline</h1>
@@ -384,40 +434,37 @@
               <p class="text-slate-400 text-sm my-1">Travel</p>
             </div>
             <button
-              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200"
+            id="card-nine-copy-button"
+              class="btn text-slate-400 w-[90px] rounded-xl h-[30px] bg-slate-200 hover:bg-slate-300"
             >
               <i class="fa-solid fa-copy"></i>Copy
             </button>
             <button
-              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white"
+            id="card-Nine-call-button"
+              class="btn bg-[#00A63E] w-[90px] rounded-xl h-[30px] text-white hover:bg-green-700"
             >
               <i class="fa-solid fa-phone"></i>Call
             </button>
           </div>
         </div>
 
-        <div class="main-section-right-side-div md:w-[28%] w-[90%] bg-white mx-auto p-2">
-          <div class="main-section-right-side--upper-div flex justify-between ">
-          <p class="text-slate-400 text-sm ">
-            <i class="fa-solid fa-clock mr-1"></i>Call History
-          </p>
-          <button
-            class="btn bg-[#00A63E] w-[80px] rounded-xl h-[30px] text-white"
-          >
-            <i class="fa-solid fa-phone"></i>Clear
-          </button>
-        </div>
-        <!-- js implement portion -->
-        <div class="bg-slate-100 flex justify-between mt-2">
-          <div>
-            <h1 class="font-medium text-sm">Fire Service Number</h1>
-            <p>999</p>
+        <div
+          class="main-section-right-side-div md:w-[28%] w-[90%] bg-white mx-auto p-2"
+        >
+          <div class="main-section-right-side--upper-div flex justify-between">
+            <p class="text-slate-400 text-sm">
+              <i class="fa-solid fa-clock mr-1"></i>Call History
+            </p>
+            <button
+            id="clear-button"
+              class="btn bg-[#00A63E] w-[80px] rounded-xl h-[30px] text-white"
+            >
+              <i class="love-sign fa-solid fa-phone"></i>Clear
+            </button>
           </div>
-          <p>12:33:599 AM</p>
+          <div id="call-history-update"></div>
+          <!-- js implement portion -->
         </div>
-        </div>
-
-        
       </div>
     </section>
 
