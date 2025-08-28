@@ -475,7 +475,7 @@ let copyValue=0;
 
 // card One Copy Button functionlity
 const cardOneCopyButton=document.getElementById("card-one-copy-button")
-/
+
 cardOneCopyButton.addEventListener("click",function(){
   alert(`National Emergency Number copy completed`)
   
@@ -537,8 +537,7 @@ navigator.clipboard.writeText(cardFiveNumber.textContent);
 const cardSixCopyButton=document.getElementById("card-Six-copy-button")
 const cardSixNumber=document.getElementById("card-six-number")
 cardSixCopyButton.addEventListener("click",function(){
-  alert(`Anti-Corruption Helpline
- Number copy completed`)
+  alert(`Anti-Corruption Helpline Number copy completed`)
   
   copyValue++
   copyNumber.innerText=copyValue
